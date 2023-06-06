@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <h1 style={{ backgroundColor: 'orange' }}>Demo Styling in ReactJS</h1>
     </div>
   );
