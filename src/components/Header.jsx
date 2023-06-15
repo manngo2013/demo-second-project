@@ -1,6 +1,9 @@
 import React from "react";
 import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
 import "./Header.scss";
+import { MdHome } from "react-icons/md";
+import { RiLock2Fill } from "react-icons/ri";
+import { FaUser } from "react-icons/fa";
 
 function Header(props) {
   return (
@@ -43,7 +46,10 @@ function Header(props) {
             <Button variant="outline-success">Search</Button>
           </Form>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#home">
+              <MdHome style={{ fontSize: "22px" }} />
+              Home
+            </Nav.Link>
             <Nav.Link href="#link">About Us</Nav.Link>
             <Nav.Link href="#link">Our Works</Nav.Link>
             <Nav.Link href="#link">News & Events</Nav.Link>
@@ -51,8 +57,14 @@ function Header(props) {
           </Nav>
 
           <Nav>
-            <Nav.Link href="#link">Login</Nav.Link>
-            <Nav.Link href="#link">Register</Nav.Link>
+            <Nav.Link href="#link">
+              <RiLock2Fill />
+              Login
+            </Nav.Link>
+            <Nav.Link href="#link">
+              <FaUser />
+              Register
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
